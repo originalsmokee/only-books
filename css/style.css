@@ -174,8 +174,10 @@ input.search-area__input::placeholder {
 
 /* CONTENT / FIRST SCREEN */
 
-#content {
-    margin-top: 40px;
+
+.first-screen {
+    background-color: rgba(247, 248, 250, 1);
+    padding: 40px 0px;
 }
 
 /* MENU STYLING */
@@ -214,13 +216,27 @@ input.search-area__input::placeholder {
 
 .slider-container__next-page, .slider-container__prev-page {
     position: absolute;
-    top: 50%;
+    top:50%;
+    transform:translateY(-50%);
     z-index: 10;
     color: #fff;
     width: 10px;
     height: 10px;
+    
 }
 
-.fas {
-    font-family: "Font Awesome 5 Free";
+.slider-container__prev-page {
+    left: 25px;
+}
+
+.slider-container__next-page {
+    right: 25px;
+}
+
+
+
+i.fas {
+    font-family: "FontAwesome";
+    font-weight: 900;
+    font-style: normal;
 }
