@@ -10,19 +10,20 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/mobile-style.css">
 
     </head>
     <body>
         <header>
             <div class="container">
                 <div class="row">
-                    <div class="col-2">
+                    <div class="col-lg-2 col-md-2 col-6">
                         <p class="calls">
                             Calls are free of charge<br>0-800-600-505
                         </p>
                     </div>
-                    <div class="col-10">
-                        <nav>
+                    <div class="col-lg-10 col-md-10 col-6">
+                        <nav class="nav-menu__desktop">
                             <ul>
                                 <li><a href="#">Book Listing</a></li>
                                 <li><a href="#">Single Book</a></li>
@@ -30,16 +31,35 @@
                                 <li><a href="#">Login</a></li>
                             </ul>
                         </nav>
+						<div class="nav-menu__mobile">
+							<div class="menu-icon__open">
+								<svg viewBox="0 0 100 80" width="40" height="20" fill="white">
+									<rect width="100" height="10" rx="8"></rect>
+									<rect y="30" width="100" height="10" rx="8"></rect>
+									<rect y="60" width="100" height="10" rx="8"></rect>
+								</svg>	
+							</div>
+							<div class="menu-icon__close inactive">
+								<?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg fill="white" height="20px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="20px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M443.6,387.1L312.4,255.4l131.5-130c5.4-5.4,5.4-14.2,0-19.6l-37.4-37.6c-2.6-2.6-6.1-4-9.8-4c-3.7,0-7.2,1.5-9.8,4  L256,197.8L124.9,68.3c-2.6-2.6-6.1-4-9.8-4c-3.7,0-7.2,1.5-9.8,4L68,105.9c-5.4,5.4-5.4,14.2,0,19.6l131.5,130L68.4,387.1  c-2.6,2.6-4.1,6.1-4.1,9.8c0,3.7,1.4,7.2,4.1,9.8l37.4,37.6c2.7,2.7,6.2,4.1,9.8,4.1c3.5,0,7.1-1.3,9.8-4.1L256,313.1l130.7,131.1  c2.7,2.7,6.2,4.1,9.8,4.1c3.5,0,7.1-1.3,9.8-4.1l37.4-37.6c2.6-2.6,4.1-6.1,4.1-9.8C447.7,393.2,446.2,389.7,443.6,387.1z"/></svg>
+							</div>
+							<div class="nav-menu__mobile-content inactive">
+								<ul>
+									<li><a href="#">Book Listing</a></li>
+									<li><a href="#">Single Book</a></li>
+									<li><a href="#">Blog</a></li>
+									<li><a href="#">Login</a></li>
+								</ul>
+							</div>
+						</div>
                     </div>
                 </div>
                 </div>
-
             <div class="container">
                 <div class="row">
-                    <div class="col-2">
+                    <div class="col-lg-2 col-md-2 col-6">
                         <img src="/img/2X-logo-default.png" alt="logo" class="logo">
                     </div>
-                    <div class="col-2">
+                    <div class="col-lg-2 col-md-2 col-6">
                         <div class="menu-trigger"> 
                             <div class="menu-trigger__icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect x="0.5" y="0.5" width="8.09091" height="8.09091" rx="1.5" fill="transparent" stroke="currentColor"></rect>
@@ -51,13 +71,13 @@
                             </div>
                            
                     </div>
-                    <div class="col-6">
+                    <div class="col-lg-6 col-md-6 col-9">
                         <div class="search-area">
                             <input type="text" placeholder="I'm looking for..." class="search-area__input">
                             <input type="button" value="Search" class="search-area__submit">
                         </div>
                     </div>
-                    <div class="col-2">
+                    <div class="col-lg-2 col-md-2 col-3">
                         <div class="icon-container">
                             <div class="wishlist">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="30" viewBox="0 0 22 30" fill="none"><path d="M10.4817 22.4781L1 28.2246V2C1 1.44772 1.44772 1 2 1H20C20.5523 1 21 1.44771 21 2V28.2246L11.5183 22.4781L11 22.164L10.4817 22.4781Z" fill="transparent" stroke="currentColor" stroke-width="2"></path></svg>
@@ -75,7 +95,7 @@
             <div class="first-screen">
                 <div class="container">
                     <div class="row">
-                        <div class="col-3">
+                        <div class="col-lg-3 col-md-3">
                             <nav class="category-menu">
                                 <ul class="category-menu__items">
                                     <li class="category-menu__item"><a href="#" class="category-menu__item-link">Books</a></li>
@@ -85,7 +105,7 @@
                                 </ul>
                             </nav>
                         </div>
-                        <div class="col-9">
+                        <div class="col-lg-9 col-md-9">
                             <div class="slider-container">
                                 <div class="slider-item">
                                     <img src="img/Banner 01.png" alt="slider-image-01" class="slider-item__image">
@@ -96,21 +116,626 @@
                                 <div class="slider-container__next-page">
                                     <i aria-hidden="true" class="fas fa-chevron-right"></i>
                                 </div>
-                                <div class="slider-container__pagination">
-										<!-- test connection -->
-                                </div>
+									<ul class="slider-container__navigation-dots">
+										<li class="slider-container__navigation-dot active"></li>
+											<li class="slider-container__navigation-dot"></li>
+											<li class="slider-container__navigation-dot"></li>
+									</ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+			<div class="bestsellers listing container">
+				<h3 class="listing__title">Best Sellers</h3>
+				<div class="listing__items">
+					<div class="listing-item">
+						<img src="/img/figma/Rectangle 68.png" alt="img" class="listing-item__thumbnail">
+						<h4 class="listing-item__title">One Vote Away</h4>
+						<span class="listing-item__author">Ted Cruz</span>
+						<div class="listing-item__evaluation">
+							<span class="listing-item__price">$17.39</span>
+							<span class="listing-item__rating">
+								<span class="listing-item__rating-filled"></span>
+								<span class="listing-item__rating-filled"></span>
+								<span class="listing-item__rating-filled"></span>
+								<span class="listing-item__rating-filled"></span>
+								<span class="listing-item__rating-empty">☆</span>
+							</span>	
+						</div>
+						<div class="listing-item__actions">
+							<a href="#" class="listing-item__add-to-cart">Add to Cart</a>
+							<a href="#" class="listing-item__wishlist"><svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M6.75193 13.5659L0.5 17.1384V2C0.5 1.17157 1.17157 0.5 2 0.5H12C12.8284 0.5 13.5 1.17157 13.5 2V17.1384L7.24807 13.5659L7 13.4241L6.75193 13.5659Z" fill="white" stroke="#E6524B"/>
+								</svg></a>
+						</div>
+						<div class="listing-item__badge listing-item__badge-popular"><span class="listing-item__badge-popular-text">Popular</span></div>						
+					</div>
+					<div class="listing-item">
+						<img src="/img/figma/Rectangle 68-1.png" alt="img" class="listing-item__thumbnail">
+						<h4 class="listing-item__title">7 Secrets of Persuasion</h4>
+						<span class="listing-item__author">Ina Garten</span>
+						<div class="listing-item__evaluation">
+							<span class="listing-item__price">$12.00</span>
+							<span class="listing-item__rating">
+								<span class="listing-item__rating-filled"></span>
+								<span class="listing-item__rating-filled"></span>
+								<span class="listing-item__rating-filled"></span>
+								<span class="listing-item__rating-filled"></span>
+								<span class="listing-item__rating-empty">☆</span>
+							</span>	
+						</div>
+						<div class="listing-item__actions">
+							<a href="#" class="listing-item__add-to-cart">Add to Cart</a>
+							<a href="#" class="listing-item__wishlist"><svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M6.75193 13.5659L0.5 17.1384V2C0.5 1.17157 1.17157 0.5 2 0.5H12C12.8284 0.5 13.5 1.17157 13.5 2V17.1384L7.24807 13.5659L7 13.4241L6.75193 13.5659Z" fill="white" stroke="#E6524B"/>
+								</svg></a>
+						</div>
+						<div class="listing-item__badge listing-item__badge-popular"><span class="listing-item__badge-popular-text">Popular</span></div>						
+					</div>
+					<div class="listing-item">
+						<img src="/img/figma/Rectangle 68-2.png" alt="img" class="listing-item__thumbnail">
+						<h4 class="listing-item__title">American Dirt</h4>
+						<span class="listing-item__author">Ted Cruz</span>
+						<div class="listing-item__evaluation">
+							<span class="listing-item__price">$16.00</span>
+							<span class="listing-item__rating">
+								<span class="listing-item__rating-filled"></span>
+								<span class="listing-item__rating-filled"></span>
+								<span class="listing-item__rating-filled"></span>
+								<span class="listing-item__rating-filled"></span>
+								<span class="listing-item__rating-empty">☆</span>
+							</span>	
+						</div>
+						<div class="listing-item__actions">
+							<a href="#" class="listing-item__add-to-cart">Add to Cart</a>
+							<a href="#" class="listing-item__wishlist"><svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M6.75193 13.5659L0.5 17.1384V2C0.5 1.17157 1.17157 0.5 2 0.5H12C12.8284 0.5 13.5 1.17157 13.5 2V17.1384L7.24807 13.5659L7 13.4241L6.75193 13.5659Z" fill="white" stroke="#E6524B"/>
+								</svg></a>
+						</div>
+						<div class="listing-item__badge listing-item__badge-popular"><span class="listing-item__badge-popular-text">Popular</span></div>						
+					</div>
+					<div class="listing-item">
+						<img src="/img/figma/Rectangle 68-3.png" alt="img" class="listing-item__thumbnail">
+						<h4 class="listing-item__title">Surviving The Forest</h4>
+						<span class="listing-item__author">Adiva Geffen</span>
+						<div class="listing-item__evaluation">
+							<span class="listing-item__price">$22.99</span>
+							<span class="listing-item__rating">
+								<span class="listing-item__rating-filled"></span>
+								<span class="listing-item__rating-filled"></span>
+								<span class="listing-item__rating-filled"></span>
+								<span class="listing-item__rating-filled"></span>
+								<span class="listing-item__rating-empty">☆</span>
+							</span>	
+						</div>
+						<div class="listing-item__actions">
+							<a href="#" class="listing-item__add-to-cart">Add to Cart</a>
+							<a href="#" class="listing-item__wishlist"><svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M6.75193 13.5659L0.5 17.1384V2C0.5 1.17157 1.17157 0.5 2 0.5H12C12.8284 0.5 13.5 1.17157 13.5 2V17.1384L7.24807 13.5659L7 13.4241L6.75193 13.5659Z" fill="white" stroke="#E6524B"/>
+								</svg></a>
+						</div>
+						<div class="listing-item__badge listing-item__badge-popular"><span class="listing-item__badge-popular-text">Popular</span></div>						
+					</div>
+					<div class="listing-item">
+						<img src="/img/figma/Rectangle 68-4.png" alt="img" class="listing-item__thumbnail">
+						<h4 class="listing-item__title">The Secrets We Keep</h4>
+						<span class="listing-item__author">Kate Hewitt</span>
+						<div class="listing-item__evaluation">
+							<span class="listing-item__price">$10.50</span>
+							<span class="listing-item__rating">
+								<span class="listing-item__rating-filled"></span>
+								<span class="listing-item__rating-filled"></span>
+								<span class="listing-item__rating-filled"></span>
+								<span class="listing-item__rating-filled"></span>
+								<span class="listing-item__rating-empty">☆</span>
+							</span>	
+						</div>
+						<div class="listing-item__actions">
+							<a href="#" class="listing-item__add-to-cart">Add to Cart</a>
+							<a href="#" class="listing-item__wishlist"><svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M6.75193 13.5659L0.5 17.1384V2C0.5 1.17157 1.17157 0.5 2 0.5H12C12.8284 0.5 13.5 1.17157 13.5 2V17.1384L7.24807 13.5659L7 13.4241L6.75193 13.5659Z" fill="white" stroke="#E6524B"/>
+								</svg></a>
+						</div>
+						<div class="listing-item__badge listing-item__badge-popular"><span class="listing-item__badge-popular-text">Popular</span></div>						
+					</div>
+				</div>
+				<div class="listing__navigation-arrows">
+					<div class="listing__navigation-arrow listing__navigation-left">
+						<i aria-hidden="true" class="fas fa-chevron-left"></i>
+					</div>
+					<div class="listing__navigation-arrow listing__navigation-right">
+						<i aria-hidden="true" class="fas fa-chevron-right"></i>
+					</div>
+				</div>
+				<ul class="listing__navigation-dots">
+				<li class="listing__navigation-dot active"></li>
+					<li class="listing__navigation-dot"></li>
+					<li class="listing__navigation-dot"></li>
+					<li class="listing__navigation-dot"></li>
+				</ul>
+			</div>
+
+			<div class="releases listing container">
+				<h3 class="listing__title">Hot New Releases</h3>
+				<div class="listing__items">
+					<div class="listing-item">
+						<img src="/img/figma/Rectangle 68-5.png" alt="img" class="listing-item__thumbnail">
+						<h4 class="listing-item__title">The Dip</h4>
+						<span class="listing-item__author">Seth Godin</span>
+						<div class="listing-item__evaluation">
+							<span class="listing-item__price">$17.00</span>
+							<span class="listing-item__rating">
+								<span class="listing-item__rating-filled"></span>
+								<span class="listing-item__rating-filled"></span>
+								<span class="listing-item__rating-filled"></span>
+								<span class="listing-item__rating-filled"></span>
+								<span class="listing-item__rating-empty">☆</span>
+							</span>	
+						</div>
+						<div class="listing-item__actions">
+							<a href="#" class="listing-item__add-to-cart">Add to Cart</a>
+							<a href="#" class="listing-item__wishlist"><svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M6.75193 13.5659L0.5 17.1384V2C0.5 1.17157 1.17157 0.5 2 0.5H12C12.8284 0.5 13.5 1.17157 13.5 2V17.1384L7.24807 13.5659L7 13.4241L6.75193 13.5659Z" fill="white" stroke="#E6524B"/>
+								</svg></a>
+						</div>
+						<div class="listing-item__badge listing-item__badge-releases"><span class="listing-item__badge-releases-text">New</span></div>						
+					</div>
+					<div class="listing-item">
+						<img src="/img/figma/Rectangle 68-6.png" alt="img" class="listing-item__thumbnail">
+						<h4 class="listing-item__title">A Promised Land</h4>
+						<span class="listing-item__author">Barack Obama</span>
+						<div class="listing-item__evaluation">
+							<span class="listing-item__price">$27.00</span>
+							<span class="listing-item__rating">
+								<span class="listing-item__rating-filled"></span>
+								<span class="listing-item__rating-filled"></span>
+								<span class="listing-item__rating-filled"></span>
+								<span class="listing-item__rating-filled"></span>
+								<span class="listing-item__rating-filled"></span>
+							</span>	
+						</div>
+						<div class="listing-item__actions">
+							<a href="#" class="listing-item__add-to-cart">Add to Cart</a>
+							<a href="#" class="listing-item__wishlist"><svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M6.75193 13.5659L0.5 17.1384V2C0.5 1.17157 1.17157 0.5 2 0.5H12C12.8284 0.5 13.5 1.17157 13.5 2V17.1384L7.24807 13.5659L7 13.4241L6.75193 13.5659Z" fill="white" stroke="#E6524B"/>
+								</svg></a>
+						</div>
+						<div class="listing-item__badge listing-item__badge-releases"><span class="listing-item__badge-releases-text">New</span></div>						
+					</div>
+					<div class="listing-item">
+						<img src="/img/figma/Rectangle 68-7.png" alt="img" class="listing-item__thumbnail">
+						<h4 class="listing-item__title">The Office</h4>
+						<span class="listing-item__author">Robb Pearlman</span>
+						<div class="listing-item__evaluation">
+							<span class="listing-item__price">$12.00</span>
+							<span class="listing-item__rating">
+								<span class="listing-item__rating-filled"></span>
+								<span class="listing-item__rating-filled"></span>
+								<span class="listing-item__rating-filled"></span>
+								<span class="listing-item__rating-filled"></span>
+								<span class="listing-item__rating-empty">☆</span>
+							</span>	
+						</div>
+						<div class="listing-item__actions">
+							<a href="#" class="listing-item__add-to-cart">Add to Cart</a>
+							<a href="#" class="listing-item__wishlist"><svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M6.75193 13.5659L0.5 17.1384V2C0.5 1.17157 1.17157 0.5 2 0.5H12C12.8284 0.5 13.5 1.17157 13.5 2V17.1384L7.24807 13.5659L7 13.4241L6.75193 13.5659Z" fill="white" stroke="#E6524B"/>
+								</svg></a>
+						</div>
+						<div class="listing-item__badge listing-item__badge-releases"><span class="listing-item__badge-releases-text">New</span></div>						
+					</div>
+					<div class="listing-item">
+						<img src="/img/figma/Rectangle 68-8.png" alt="img" class="listing-item__thumbnail">
+						<h4 class="listing-item__title">The Return</h4>
+						<span class="listing-item__author">Nicholas Sparks</span>
+						<div class="listing-item__evaluation">
+							<span class="listing-item__price">$16.00</span>
+							<span class="listing-item__rating">
+								<span class="listing-item__rating-filled"></span>
+								<span class="listing-item__rating-filled"></span>
+								<span class="listing-item__rating-filled"></span>
+								<span class="listing-item__rating-filled"></span>
+								<span class="listing-item__rating-filled"></span>
+							</span>	
+						</div>
+						<div class="listing-item__actions">
+							<a href="#" class="listing-item__add-to-cart">Add to Cart</a>
+							<a href="#" class="listing-item__wishlist"><svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M6.75193 13.5659L0.5 17.1384V2C0.5 1.17157 1.17157 0.5 2 0.5H12C12.8284 0.5 13.5 1.17157 13.5 2V17.1384L7.24807 13.5659L7 13.4241L6.75193 13.5659Z" fill="white" stroke="#E6524B"/>
+								</svg></a>
+						</div>
+						<div class="listing-item__badge listing-item__badge-releases"><span class="listing-item__badge-releases-text">New</span></div>						
+					</div>
+					<div class="listing-item">
+						<img src="/img/figma/Rectangle 68-9.png" alt="img" class="listing-item__thumbnail">
+						<h4 class="listing-item__title">7 Secrets of Persuasion</h4>
+						<span class="listing-item__author">Kristin Cavallari</span>
+						<div class="listing-item__evaluation">
+							<span class="listing-item__price">$17.52</span>
+							<span class="listing-item__rating">
+								<span class="listing-item__rating-filled"></span>
+								<span class="listing-item__rating-filled"></span>
+								<span class="listing-item__rating-filled"></span>
+								<span class="listing-item__rating-filled"></span>
+								<span class="listing-item__rating-empty">☆</span>
+							</span>	
+						</div>
+						<div class="listing-item__actions">
+							<a href="#" class="listing-item__add-to-cart">Add to Cart</a>
+							<a href="#" class="listing-item__wishlist"><svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M6.75193 13.5659L0.5 17.1384V2C0.5 1.17157 1.17157 0.5 2 0.5H12C12.8284 0.5 13.5 1.17157 13.5 2V17.1384L7.24807 13.5659L7 13.4241L6.75193 13.5659Z" fill="white" stroke="#E6524B"/>
+								</svg></a>
+						</div>
+						<div class="listing-item__badge listing-item__badge-releases"><span class="listing-item__badge-releases-text">New</span></div>						
+					</div>
+				</div>
+				<div class="listing__navigation-arrows">
+					<div class="listing__navigation-arrow listing__navigation-left">
+						<i aria-hidden="true" class="fas fa-chevron-left"></i>
+					</div>
+					<div class="listing__navigation-arrow listing__navigation-right">
+						<i aria-hidden="true" class="fas fa-chevron-right"></i>
+					</div>
+				</div>
+				<ul class="listing__navigation-dots">
+				<li class="listing__navigation-dot active"></li>
+					<li class="listing__navigation-dot"></li>
+					<li class="listing__navigation-dot"></li>
+					<li class="listing__navigation-dot"></li>
+				</ul>
+			</div>
+
+			<div class="container week-book">
+				<div class="week-book__badge"><span class="week-book__badge-text">Book of the Week</span></div>	
+				<div class="row">
+					<div class="col-lg-4 col-md-5 week-book__info">
+						<h2 class="week-book__title">Elsewhere</h2>
+						<p class="week-book__author">by Dean Koontz</p>
+						<p class="week-book__price">$18.00</p>
+						<p class="week-book__description">The fate of the world is in the hands of a father and daughter in an epic novel of wonder and terror by Dean Koontz, the #1 New York Times bestselling master of suspense.</p>	
+						<a href="#" class="week-book_view-details">View Details</a>
+					</div>
+					<div class="col-lg-8 col-md-7 week-book__image">
+						<img src="/img/figma/308 1.png" alt="Book of the week" class="week-book__image-img">
+					</div>	
+				</div>			
+			</div>
+
+			<div class="container best-books">
+				<h3 class="listing__title">The Best Books of 2020</h3>
+				<div class="row best-books_content">
+					<div class="col-lg-3 col-md-3">
+						<nav class="category-menu">
+							<ul class="category-menu__items">
+								<li class="category-menu__item"><a href="#" class="category-menu__item-link">Paper Books</a></li>
+								<li class="category-menu__item"><a href="#" class="category-menu__item-link">E-Books</a></li>
+								<li class="category-menu__item"><a href="#" class="category-menu__item-link">Audio Books</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col-lg-9 col-md-9">
+						<div class="listing best-books-listing">
+							<div class="listing__items">
+								<div class="listing-item">
+									<img src="/img/figma/Book-1.png" alt="img" class="listing-item__thumbnail">
+									<h4 class="listing-item__title">The Dancing Girls</h4>
+									<span class="listing-item__author">M.M. Chouinard</span>
+									<div class="listing-item__evaluation">
+										<span class="listing-item__price">$13.00</span>
+								</div>
+								</div>
+								<div class="listing-item">
+									<img src="/img/figma/Book-3.png" alt="img" class="listing-item__thumbnail">
+									<h4 class="listing-item__title">Zombies’ Day</h4>
+									<span class="listing-item__author">PopularMMOs</span>
+									<div class="listing-item__evaluation">
+										<span class="listing-item__price">$13.00</span>
+									</div>
+								</div>
+								<div class="listing-item">
+									<img src="/img/figma/Book-5.png" alt="img" class="listing-item__thumbnail">
+									<h4 class="listing-item__title">The Calculating Stars</h4>
+									<span class="listing-item__author">Mary Robinette Kowal</span>
+									<div class="listing-item__evaluation">
+										<span class="listing-item__price">$12.79</span>
+								</div>
+								</div>
+								<div class="listing-item">
+									<img src="/img/figma/Book-7.png" alt="img" class="listing-item__thumbnail">
+									<h4 class="listing-item__title">The Obelisk Gate</h4>
+									<span class="listing-item__author">N. K. Jemisin</span>
+									<div class="listing-item__evaluation">
+										<span class="listing-item__price">$13.00</span>
+								</div>
+								</div>
+								<div class="listing-item">
+									<img src="/img/figma/Book-9.png" alt="img" class="listing-item__thumbnail">
+									<h4 class="listing-item__title">Where the Forest Meets...</h4>
+									<span class="listing-item__author">Glendy Vanderah</span>
+									<div class="listing-item__evaluation">
+										<span class="listing-item__price">$15.99</span>
+								</div>
+								</div>
+								<div class="listing-item">
+									<img src="/img/figma/Book.png" alt="img" class="listing-item__thumbnail">
+									<h4 class="listing-item__title">Without a Summer</h4>
+									<span class="listing-item__author">Mary Robinette Kowal</span>
+									<div class="listing-item__evaluation">
+										<span class="listing-item__price">$13.00</span>
+								</div>
+								</div>
+								<div class="listing-item">
+									<img src="/img/figma/Book-2.png" alt="img" class="listing-item__thumbnail">
+									<h4 class="listing-item__title">It All Comes Back to You</h4>
+									<span class="listing-item__author">Beth Duke </span>
+									<div class="listing-item__evaluation">
+										<span class="listing-item__price">$13.32</span>
+								</div>
+								</div>
+								<div class="listing-item">
+									<img src="/img/figma/Book-4.png" alt="img" class="listing-item__thumbnail">
+									<h4 class="listing-item__title">We Were the Lucky Ones</h4>
+									<span class="listing-item__author">Georgia Hunter </span>
+									<div class="listing-item__evaluation">
+										<span class="listing-item__price">$9.60</span>
+									</div>
+								</div>
+								<div class="listing-item">
+									<img src="/img/figma/Book-6.png" alt="img" class="listing-item__thumbnail">
+									<h4 class="listing-item__title">It's Not Supposed to...</h4>
+									<span class="listing-item__author">Lysa TerKeurst</span>
+									<div class="listing-item__evaluation">
+										<span class="listing-item__price">$12.50</span>
+								</div>
+								</div>
+								<div class="listing-item">
+									<img src="/img/figma/Book-8.png" alt="img" class="listing-item__thumbnail">
+									<h4 class="listing-item__title">Everything Is F*cked</h4>
+									<span class="listing-item__author">Mark Manson</span>
+									<div class="listing-item__evaluation">
+										<span class="listing-item__price">$13.00</span>
+									</div>
+								</div>
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="news-section">
+				<div class="container">
+					<h3 class="listing__title">News and Articles</h3>
+							<div class="listing news-listing">
+								<div class="listing__items">
+									<div class="listing-item">
+										<img src="/img/figma/Rectangle 54.png" alt="img" class="listing-item__thumbnail">
+										<div class="listing-item__mark award"><span>Awards</span></div>
+										<h4 class="listing-item__title">The National Book Award longlists</h4>
+										<span class="listing-item__date">| September 21, 2020</span>
+									</div>
+									<div class="listing-item">
+										<img src="/img/figma/Rectangle 55.png" alt="img" class="listing-item__thumbnail">
+										<div class="listing-item__mark editors"><span>Editors` Picks</span></div>
+										<h4 class="listing-item__title">Weekend reading</h4>
+										<span class="listing-item__date">| September 21, 2020</span>
+									</div>
+									<div class="listing-item">
+										<img src="/img/figma/Rectangle 56.png" alt="img" class="listing-item__thumbnail">
+										<div class="listing-item__mark interview"><span>Interview</span></div>
+										<h4 class="listing-item__title">The National Book Award longlists</h4>
+										<span class="listing-item__date">| September 21, 2020</span>
+									</div>
+									<div class="listing-item">
+										<img src="/img/figma/Rectangle 57.png" alt="img" class="listing-item__thumbnail">
+										<div class="listing-item__mark award"><span>Awards</span></div>
+										<h4 class="listing-item__title">The best history books of September</h4>
+										<span class="listing-item__date">| September 21, 2020</span>
+									</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="related listing container">
+				<h3 class="listing__title">Related Books</h3>
+				<div class="listing__items">
+					<div class="listing-item">
+						<img src="/img/figma/Rectangle 68-9.png" alt="img" class="listing-item__thumbnail">
+						<h4 class="listing-item__title">The Fated Sky: A Lady Astronaut Novel</h4>
+						<span class="listing-item__author">Mary Robinette Kowal</span>
+						<div class="listing-item__evaluation">
+							<span class="listing-item__price">$3.00</span>
+							<span class="listing-item__rating">
+								<span class="listing-item__rating-filled"></span>
+								<span class="listing-item__rating-filled"></span>
+								<span class="listing-item__rating-filled"></span>
+								<span class="listing-item__rating-filled"></span>
+								<span class="listing-item__rating-empty">☆</span>
+							</span>	
+						</div>
+						<div class="listing-item__actions">
+							<a href="#" class="listing-item__add-to-cart">Add to Cart</a>
+							<a href="#" class="listing-item__wishlist"><svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M6.75193 13.5659L0.5 17.1384V2C0.5 1.17157 1.17157 0.5 2 0.5H12C12.8284 0.5 13.5 1.17157 13.5 2V17.1384L7.24807 13.5659L7 13.4241L6.75193 13.5659Z" fill="white" stroke="#E6524B"/>
+								</svg></a>
+						</div>
+						<div class="listing-item__badge listing-item__badge-popular"><span class="listing-item__badge-popular-text">Popular</span></div>						
+					</div>
+					<div class="listing-item">
+						<img src="/img/figma/Rectangle 68-10.png" alt="img" class="listing-item__thumbnail">
+						<h4 class="listing-item__title">Glamour in Glass (Glamourist Histories...</h4>
+						<span class="listing-item__author">Mary Robinette Kowal</span>
+						<div class="listing-item__evaluation">
+							<span class="listing-item__price">$20.00</span>
+							<span class="listing-item__rating">
+								<span class="listing-item__rating-filled"></span>
+								<span class="listing-item__rating-filled"></span>
+								<span class="listing-item__rating-filled"></span>
+								<span class="listing-item__rating-filled"></span>
+								<span class="listing-item__rating-empty">☆</span>
+							</span>	
+						</div>
+						<div class="listing-item__actions">
+							<a href="#" class="listing-item__add-to-cart">Add to Cart</a>
+							<a href="#" class="listing-item__wishlist"><svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M6.75193 13.5659L0.5 17.1384V2C0.5 1.17157 1.17157 0.5 2 0.5H12C12.8284 0.5 13.5 1.17157 13.5 2V17.1384L7.24807 13.5659L7 13.4241L6.75193 13.5659Z" fill="white" stroke="#E6524B"/>
+								</svg></a>
+						</div>
+						<div class="listing-item__badge listing-item__badge-popular"><span class="listing-item__badge-popular-text">Popular</span></div>						
+					</div>
+					<div class="listing-item">
+						<img src="/img/figma/Rectangle 68-11.png" alt="img" class="listing-item__thumbnail">
+						<h4 class="listing-item__title">In an Absent Dream (Wayward Children...</h4>
+						<span class="listing-item__author">Seanan McGuire</span>
+						<div class="listing-item__evaluation">
+							<span class="listing-item__price">$14.00</span>
+							<span class="listing-item__rating">
+								<span class="listing-item__rating-filled"></span>
+								<span class="listing-item__rating-filled"></span>
+								<span class="listing-item__rating-filled"></span>
+								<span class="listing-item__rating-filled"></span>
+								<span class="listing-item__rating-empty">☆</span>
+							</span>	
+						</div>
+						<div class="listing-item__actions">
+							<a href="#" class="listing-item__add-to-cart">Add to Cart</a>
+							<a href="#" class="listing-item__wishlist"><svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M6.75193 13.5659L0.5 17.1384V2C0.5 1.17157 1.17157 0.5 2 0.5H12C12.8284 0.5 13.5 1.17157 13.5 2V17.1384L7.24807 13.5659L7 13.4241L6.75193 13.5659Z" fill="white" stroke="#E6524B"/>
+								</svg></a>
+						</div>
+						<div class="listing-item__badge listing-item__badge-popular"><span class="listing-item__badge-popular-text">Popular</span></div>						
+					</div>
+					<div class="listing-item">
+						<img src="/img/figma/Rectangle 68-12.png" alt="img" class="listing-item__thumbnail">
+						<h4 class="listing-item__title">Good Vibes, Good Life: How Self-Love Is the...</h4>
+						<span class="listing-item__author">Vex King</span>
+						<div class="listing-item__evaluation">
+							<span class="listing-item__price">$31.00</span>
+							<span class="listing-item__rating">
+								<span class="listing-item__rating-filled"></span>
+								<span class="listing-item__rating-filled"></span>
+								<span class="listing-item__rating-filled"></span>
+								<span class="listing-item__rating-filled"></span>
+								<span class="listing-item__rating-empty">☆</span>
+							</span>	
+						</div>
+						<div class="listing-item__actions">
+							<a href="#" class="listing-item__add-to-cart">Add to Cart</a>
+							<a href="#" class="listing-item__wishlist"><svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M6.75193 13.5659L0.5 17.1384V2C0.5 1.17157 1.17157 0.5 2 0.5H12C12.8284 0.5 13.5 1.17157 13.5 2V17.1384L7.24807 13.5659L7 13.4241L6.75193 13.5659Z" fill="white" stroke="#E6524B"/>
+								</svg></a>
+						</div>
+						<div class="listing-item__badge listing-item__badge-popular"><span class="listing-item__badge-popular-text">Popular</span></div>						
+					</div>
+					<div class="listing-item">
+						<img src="/img/figma/Rectangle 68-13.png" alt="img" class="listing-item__thumbnail">
+						<h4 class="listing-item__title">Get Out of Your Own Way: Overcoming...</h4>
+						<span class="listing-item__author">Mark Goulston</span>
+						<div class="listing-item__evaluation">
+							<span class="listing-item__price">$12.40</span>
+							<span class="listing-item__rating">
+								<span class="listing-item__rating-filled"></span>
+								<span class="listing-item__rating-filled"></span>
+								<span class="listing-item__rating-filled"></span>
+								<span class="listing-item__rating-filled"></span>
+								<span class="listing-item__rating-empty">☆</span>
+							</span>	
+						</div>
+						<div class="listing-item__actions">
+							<a href="#" class="listing-item__add-to-cart">Add to Cart</a>
+							<a href="#" class="listing-item__wishlist"><svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M6.75193 13.5659L0.5 17.1384V2C0.5 1.17157 1.17157 0.5 2 0.5H12C12.8284 0.5 13.5 1.17157 13.5 2V17.1384L7.24807 13.5659L7 13.4241L6.75193 13.5659Z" fill="white" stroke="#E6524B"/>
+								</svg></a>
+						</div>
+						<div class="listing-item__badge listing-item__badge-popular"><span class="listing-item__badge-popular-text">Popular</span></div>						
+					</div>
+				</div>
+				<div class="listing__navigation-arrows">
+					<div class="listing__navigation-arrow listing__navigation-left">
+						<i aria-hidden="true" class="fas fa-chevron-left"></i>
+					</div>
+					<div class="listing__navigation-arrow listing__navigation-right">
+						<i aria-hidden="true" class="fas fa-chevron-right"></i>
+					</div>
+				</div>
+				<ul class="listing__navigation-dots">
+				<li class="listing__navigation-dot active"></li>
+					<li class="listing__navigation-dot"></li>
+					<li class="listing__navigation-dot"></li>
+					<li class="listing__navigation-dot"></li>
+				</ul>
+			</div>
+
         </div>
 
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-3 col-4">
+						<div class="popular-categories footer-column">
+							<h5 class="footer-column__title popular-categories__title">Popular Categories</h5>
+							<a href="" class="footer-column__item popular-categories__item">Business & Money</a>
+							<a href="" class="footer-column__item popular-categories__item">Children's Books</a>
+							<a href="" class="footer-column__item popular-categories__item">Computer & Technologies</a>
+							<a href="" class="footer-column__item popular-categories__item">Cookbooks, Food & Wine</a>
+							<a href="" class="footer-column__item popular-categories__item">Crafts, Hobbies & Home</a>
+							<a href="" class="footer-column__item popular-categories__item">Education & Teaching</a>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3 col-4">
+						<div class="customer-service footer-column">
+							<h5 class="footer-column__title customer-service__title">Customer service</h5>
+							<a href="" class="footer-column__item customer-service__item">Help</a>
+							<a href="" class="footer-column__item customer-service__item">FAQ</a>
+							<a href="" class="footer-column__item customer-service__item">Secure payment</a>
+							<a href="" class="footer-column__item customer-service__item">Delivery</a>
+							<a href="" class="footer-column__item customer-service__item">Returns & Refunds</a>
+							<a href="" class="footer-column__item customer-service__item">Contact Us</a>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-2 col-4">
+						<div class="follow-us footer-column">
+							<h5 class="footer-column__title follow-us__title">Follow Us</h5>
+							<a href="" class="footer-column__item follow-us__item">Instagram</a>
+							<a href="" class="footer-column__item follow-us__item">Facebook</a>
+							<a href="" class="footer-column__item follow-us__item">Twitter</a>
+							<a href="" class="footer-column__item follow-us__item">Pinterest</a>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 subscribe">
+						<h5 class="footer-column__title subscribe__title">Subscribe to our Newsletter</h5>
+						<p class="footer-column__item subscribe__notice">No spam, we promise</p>
+						<div class="search-area subscribe__form">
+                            <input type="text" placeholder="example@mail.com" class="search-area__input subscribe__input">
+                            <input type="button" value="Subscribe" class="search-area__submit subscribe__submit">
+                        </div>
+						<p class="footer-column__item subscribe__calls">Calls are free of charge<br>
+							0-800-600-505</p>
+						<p class="footer-column__item subscribe__hours">Working hours from 09:00 to 18:00</p>
+					</div>
+				</div>
 
+				<div class="row">
 
-
-
+				</div>
+			</div>
+			<div class="last-section">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-10 col-md-8 col-7">
+							<p class="last-section__text">Copyright © 2020 Crocoblock, Inc. All rights reserved</p>
+						</div>
+						<div class="col-lg-2 col-md-4 col-5 last-section__links">
+							<a href="#" class="last-section__link">Privacy Policy</a>
+							<a href="#" class="last-section__link">Terms</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    </body>
+		<script src="js/script.js"></script>
+	</body>
 </html>

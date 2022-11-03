@@ -11,6 +11,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+	color: #fff;
+}
+
 ul {
     list-style-type: none;
 }
@@ -43,6 +47,9 @@ header .row {
     color: #C0C0C0;
 }
 
+.nav-menu__mobile {
+	display: none;
+}
 header nav ul {
     display: flex;
     flex-direction: row;
@@ -90,6 +97,7 @@ img.logo {
 /* SEARCH INPUT */
 .search-area {
     position: relative;
+	display: flex;
 }
 
 .search-area::before {
@@ -197,6 +205,9 @@ input.search-area__input::placeholder {
 .category-menu .category-menu__item {
     padding: 18px 20px;
 }
+.category-menu .category-menu__item:not(:last-child) {
+	border-bottom: 1px solid lightgrey;
+}
 
 .category-menu .category-menu__item:hover {
     background-color: #E6524B;
@@ -222,6 +233,7 @@ input.search-area__input::placeholder {
     color: #fff;
     width: 10px;
     height: 10px;
+	cursor: pointer;
     
 }
 
@@ -233,10 +245,433 @@ input.search-area__input::placeholder {
     right: 25px;
 }
 
+.slider-container__navigation-dots {
+	position: relative;
+    top: -30px;
+	display: flex;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.slider-container__navigation-dot {
+	width: 12px;
+	height: 12px;
+	border: 1px solid #fff;
+	margin: 3px;
+	border-radius: 50%;
+	transition: all .3s ease;
+}
+
+.slider-container__navigation-dot.active {
+	background: #fff;
+}
 
 
 i.fas {
     font-family: "FontAwesome";
     font-weight: 900;
     font-style: normal;
+}
+
+/* LISTING STYLES */
+
+.listing {
+	margin-top: 70px;
+	margin-bottom: 70px;
+	position: relative;
+} 
+
+.listing__title {
+	font-size: 34px;
+	font-weight: 600;
+	color: #2E3741;
+	margin-bottom: 40px;
+}
+
+.listing__items {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	column-gap: 50px;
+}
+
+.listing-item {
+	position: relative;
+}
+
+.listing-item__thumbnail {
+	margin-bottom: 17px;
+}
+
+.listing-item__title {
+	font-size: 18px;
+	font-weight: 500;
+	color: #2E3741;
+	margin-bottom: 0;
+	line-height: 21px;;
+}
+
+.listing-item__author {
+	font-size: 14px;
+	color: #737E89;
+	margin-bottom: 11px;
+}
+
+.listing-item__evaluation {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 7px;
+	align-items: center;
+}
+
+.listing-item__price {
+	font-size: 18px;
+	font-weight: 600;
+	color: #E6524B;
+	line-height: 21px;
+}
+
+.listing-item__rating {
+	font-size: 25px;
+	line-height: 25px;
+	display: flex;
+	margin-right: 5px;
+}
+
+.listing-item__rating-filled {
+	color: #2E3741;
+	font-family: 'Helvetica';
+}
+.listing-item__rating-filled::before {
+	color: #2E3741;
+	content: "\002605";
+}
+
+.listing-item__actions {
+	margin-top: 17px;
+}
+
+.listing-item__add-to-cart {
+	padding: 10px 36px;
+	background-color: #E6524B;
+	color: #fff;
+	border-radius: 2px;
+}
+
+.listing-item__wishlist {
+	color: #E6524B;
+	padding: 9px 14px;
+	border: 1px solid #E6524B;
+	border-radius: 2px;
+}
+
+.listing-item__badge {
+	position: absolute;
+	top: 10px;
+	right: 0;
+	width: 80px;
+	height: 0;
+	box-shadow: 0px 2px 2px rgba(15, 38, 6, 0.2);
+}
+
+.listing-item__badge-popular {
+	border-bottom: 12px solid #045089;
+	border-top: 12px solid #045089;
+	border-left: 10px solid transparent;
+	border-radius: 2px;
+}
+.listing-item__badge-releases {
+	border-bottom: 12px solid #077C52;
+	border-top: 12px solid #077C52;
+	border-left: 10px solid transparent;
+	border-radius: 2px;
+}
+
+.listing-item__badge-popular-text {
+	position: relative;
+	top: -13px;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 600;
+	right: -5px;
+}
+
+.listing-item__badge-releases-text {
+	position: relative;
+	top: -13px;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 600;
+	right: -19px;
+}
+
+.listing__navigation-arrow {
+	top: 38%;
+	position: absolute;
+	padding: 4px 10px;
+    background: rgba(46, 55, 65, 0.2);
+    border-radius: 50%;
+	color: #fff;
+	transition: all .3s ease;
+}
+
+.listing__navigation-arrow:hover {
+	background: rgba(230, 82, 75, 1);
+	cursor: pointer;
+}
+
+.listing__navigation-left {
+	left: 20px;
+}
+.listing__navigation-right {
+	right: 20px;
+}
+
+.listing__navigation-dots {
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+}
+
+.listing__navigation-dot {
+	width: 12px;
+	height: 12px;
+	border: 1px solid #D0DBE2;
+	margin: 3px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.listing__navigation-dot.active {
+	background: #D0DBE2;
+}
+
+.week-book {
+	background-image: url(/img/figma/Rectangle\ 45.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 540px;
+	position: relative;
+	border-radius: 4px;
+}
+
+.week-book__badge {
+	position: absolute;
+	top: 45px;
+	width: 320px;
+	height: 0;
+	left: 0;
+	border-bottom: 32px solid #339E98;
+	border-top: 32px solid #339E98;
+	border-right: 20px solid transparent;
+	border-radius: 2px;
+}
+
+.week-book__badge-text {
+	position: relative;
+	top: -18px;
+	right: -60px;
+	color: #fff;
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.week-book__info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+	color: #fff;
+	padding-left: 70px;
+	padding-top: 140px;
+}
+
+.week-book__title {
+	font-size: 44px;
+	color: #fff;
+	line-height: 1em;
+	font-weight: 700;
+}
+
+.week-book__author {
+	font-size: 18px;
+	font-weight: 500;
+	color: #C6D8D8;
+	margin-bottom: 1.5rem;
+}
+
+.week-book__price {
+	color: #E6524B;
+	font-weight: 600;
+	font-size: 24px;
+	margin-bottom: 1.5rem;
+}
+
+.week-book_view-details {
+	color: #fff;
+	font-size: 14px;
+	background: #E6524B;
+	padding: 10px 50px;
+	border-radius: 2px;
+	text-align: center;
+	width: fit-content;
+}
+
+.week-book__image {
+	text-align: center;
+}
+.week-book__image-img {
+	padding-left: 15%;
+}
+
+.best-books {
+	margin-top: 60px;
+}
+
+.best-books_content {
+	border-top: 1px solid #D0DBE2;
+	padding-top: 30px;
+}
+
+/* BEST BOOKS LISTINGS */
+
+.listing.best-books-listing {
+	margin-top: 0px;
+}
+.best-books-listing .listing-item {
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.best-books-listing .listing-item__price {
+	margin-bottom: 50px;
+}
+
+/* NEWS AND ARTICLE SECTION */
+
+.news-section {
+	background-color: rgba(247, 248, 250, 1);
+	padding: 70px 0px; 
+}
+
+.news-listing .listing__title {
+	margin-top: 0;
+}
+
+.news-listing.listing {
+	margin: 0;
+}
+
+.news-listing .listing__items {
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.news-listing .listing-item .listing-item__mark {
+	margin-bottom: 8px;
+}
+
+.news-listing .listing-item .listing-item__mark span {
+	padding: 5px 10px;
+	border-radius: 2px;
+	font-size: 14px;
+	color: #fff;
+}
+.news-listing .listing-item .listing-item__mark.award span {
+	background-color: rgba(131, 179, 236, 1);
+}
+.news-listing .listing-item .listing-item__mark.editors span {
+	background-color: rgba(129, 173, 187, 1);
+}
+
+.news-listing .listing-item .listing-item__mark.interview span {
+	background-color: rgba(140, 195, 131, 1);
+}
+
+.listing-item__date {
+	color: #737E89;
+	font-size: 14px;
+}
+
+footer {
+	background-color: rgba(55, 55, 55, 1);
+	padding-top: 70px;
+	margin-top: 100px;
+}
+
+.footer-column {
+	display: flex;
+	flex-direction: column;
+
+}
+.footer-column__title {
+	font-size: 18px;
+	color: #fff;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+
+.footer-column__item {
+	color: rgba(209, 209, 209, 1);
+	font-size: 14px;
+	line-height: 2em;
+}
+
+.footer-column__title.subscribe__title {
+	margin-bottom: 0px;
+}
+.search-area.subscribe__form {
+	display: flex;
+}
+
+.search-area.subscribe__form:before {
+	content: '';
+}
+.search-area.subscribe__form .subscribe__input {
+	border-radius: 2px;
+	width: 100%;
+	margin-right: 10px;
+	padding-left: 20px;
+}
+
+input.subscribe__input::placeholder {
+	font-size: 14px;
+}
+
+.search-area.subscribe__form .subscribe__submit {
+	padding: 10px 30px;
+	width: auto;
+	font-size: 14px;
+	border-radius: 2px;
+}
+
+.subscribe__calls {
+	margin-top: 50px;
+	line-height: 18px;
+	margin-bottom: 0;
+}
+.subscribe__hours {
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+.last-section {
+	padding: 20px 0px;
+	border-top: 1px solid #fff;
+	font-size: 14px;
+}
+
+.last-section__text {
+	color: #D1D1D1;
+	margin: 0;
+}
+.last-section__links {
+	text-align: right;
+}
+
+.last-section__links a {
+	color: #D1D1D1;
+}
+.last-section__link:last-child {
+	margin-left: 30px;
 }

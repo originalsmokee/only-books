@@ -1,0 +1,256 @@
+@media (max-width: 1256px) {
+	.listing__items {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		column-gap: 20px;
+	}
+	.listing:not(.news-listing) .listing-item:last-child {
+		display: none;
+	}
+	.week-book__image-img {
+		width: 100%;
+	}
+	.week-book__image {
+		margin-top: 10%;
+		/* margin: auto; */
+	}
+	
+	.news-listing .listing__items {
+		grid-template-columns: 1fr 1fr;
+		row-gap: 20px;
+	}
+
+}
+@media (max-width: 1023px) {
+
+	/* header */
+
+	.calls {
+		font-size: 12px;
+	}
+	img.logo {
+		width: 100px;
+		height: auto;
+	}
+
+	.menu-trigger {
+		width: 100px;
+		padding: 5px;
+	}
+	.menu-trigger__text {
+		font-size: 12px;
+	}
+	.search-area__submit {
+		font-size: 12px;
+	}
+
+	/* first section */
+	.category-menu .category-menu__item {
+		padding: 10px;
+	}
+	.category-menu .category-menu__item-link {
+		font-size: 18px;
+	}
+	.listing__items {
+		grid-template-columns: 1fr 1fr 1fr;
+		column-gap: 20px;
+	}
+
+	.listing:not(.best-books-listing) .listing__items {
+		row-gap: 30px;
+	}
+	.listing__item {
+		justify-self: center;
+	}
+
+	.listing:not(.news-listing) .listing-item:nth-child(4), .listing:not(.news-listing) .listing-item:last-child {
+		display: none;
+	}
+
+	.news-listing .listing__items .listing-item {
+		justify-self: center;
+	}
+
+	/* WEEKBOOK Section */
+	.week-book__image {
+		margin-top: 20%;
+	}
+
+	.week-book__title {
+		font-size: 32px;
+	}
+	.week-book__author {
+		font-size: 16px;
+		margin-bottom: 1rem;
+	}
+	.week-book__description {
+		font-size: 14px;
+	}
+
+	/* FOOTER */
+	.footer-column__item {
+		font-size: 12px;
+	}
+	.search-area.subscribe__form input.subscribe__input {
+		width: 65%;
+		font-size: 12px;
+		margin-right: 3px;
+	}
+	.search-area.subscribe__form input.subscribe__input::placeholder {
+		font-size: 12px;
+		padding-left: 10px;
+	}
+	.search-area.subscribe__form input.subscribe__submit {
+		width: 35%;
+		padding: 5px 7px;
+		font-size: 12px;
+	}
+	.last-section__text, .last-section__link {
+		font-size: 14px;
+	}
+	footer {
+		padding-top: 40px;
+		margin-top: 40px;
+	}
+}
+
+@media (max-width: 575px) {
+
+	/* HEADER */
+
+	.nav-menu__desktop {
+		display: none;
+	}
+	.nav-menu__mobile {
+		display: block;
+		position: relative;
+		text-align: right;
+	}
+	.menu-icon__close {
+		text-align: right;
+	}
+	.inactive {
+		display: none;
+	}
+
+	.nav-menu__mobile-content {
+		background-color: #262626;
+		border-radius: 20px;
+		position: absolute;
+		right: 0;
+		top: 30px;
+		text-align: left;
+		width: 150px;
+		z-index: 999;
+	}
+	.nav-menu__mobile-content ul {
+		margin: 10px 0px;
+	}
+	.nav-menu__mobile-content ul a {
+		font-size: 12px;
+		line-height: 1em;
+		color: #C0C0C0;
+	}
+	.menu-trigger {
+		margin-right: 0;
+	}
+
+	.search-area, .icon-container {
+		margin-top: 20px;
+	}
+	.icon-container .cart {
+		margin-left: 20px;
+	}
+
+	.category-menu__items {
+		display: flex;
+		justify-content: space-between;
+	}
+	.slider-container__prev-page {
+		left: 10px;
+	}
+	.slider-container__next-page {
+		right: 10px;
+	}
+	.slider-container__next-page, .slider-container__prev-page {
+		top: 40%;
+		transform: translateY(-40%);
+	}
+	.category-menu .category-menu__item:not(:last-child) {
+		border-bottom: 0px;
+	} 
+	/* listings */
+	.listing {
+		margin-top: 0px;
+		margin-bottom: 40px;
+	}
+	.listing__items {
+		grid-template-columns: 1fr 1fr;
+		column-gap: 5px;
+	}
+	
+	.news-listing .listing__items {
+		grid-template-columns: 1fr;
+		row-gap: 20px;
+	}
+	
+	.listing:not(.best-books-listing) .listing-item:nth-child(3), .listing:not(.best-books-listing) .listing-item:nth-child(4), .listing:not(.best-books-listing) .listing-item:last-child {
+		display: none;
+	}
+
+	.listing-item__thumbnail {
+		width: 100%;
+	}
+
+	.listing-item__title, .listing-item__price {
+		font-size: 16px;
+	}
+	.listing-item__author {
+		font-size: 12px;
+	}
+	.listing-item__add-to-cart {
+		padding: 7px 36px;
+		font-size: 14px;
+	}
+	.listing-item__wishlist {
+		font-size: 14px;
+		padding: 6px 12px;
+	}
+	.container.week-book .row {
+		position: relative;
+	}
+	.week-book__info {
+		z-index: 2;
+	}
+	.week-book__image {
+		position: absolute;
+		right: -150px;
+		opacity: .5;
+	}
+	.week-book_view-details {
+		font-size: 16px;
+		padding: 8px 50px;
+	}
+	.best-books_content {
+		border: none;
+		padding-top: 0px;
+	}
+	.subscribe {
+		margin-top: 20px;
+	}
+	.footer-column__item.subscribe__calls {
+		margin-top: 20px;
+	}
+	.last-section__text, .last-section__link {
+		font-size: 12px;
+	}
+	.last-section__text {
+		text-align: center;
+	}
+	.last-section__links {
+		margin: auto;
+	}
+	.news-section {
+		padding: 0;
+		margin-bottom: 40px;
+	}
+}
