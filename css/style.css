@@ -300,6 +300,7 @@ i.fas {
 
 .listing-item__thumbnail {
 	margin-bottom: 17px;
+	width: 100%;
 }
 
 .listing-item__title {

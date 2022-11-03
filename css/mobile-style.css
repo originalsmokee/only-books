@@ -217,6 +217,7 @@
 	}
 	.container.week-book .row {
 		position: relative;
+		overflow: hidden;
 	}
 	.week-book__info {
 		z-index: 2;
